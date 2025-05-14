@@ -1,0 +1,118 @@
+.suggestion-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+}
+
+.suggestion-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(60, 60, 90, 0.13);
+  padding: 2.5rem 2.2rem 2rem 2.2rem;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  transition: box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.suggestion-emoji {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.suggestion-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem 0;
+  color: #222;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.suggestion-content {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.suggestion-quote {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.suggestion-gif {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(60, 60, 90, 0.10);
+  margin: 0.5rem 0;
+}
+
+.suggestion-buttons-row {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.soft-btn {
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(60, 60, 90, 0.08);
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+  outline: none;
+}
+
+.soft-btn:hover, .soft-btn:focus {
+  background: #f3f4f8;
+  box-shadow: 0 4px 16px 0 rgba(60, 60, 90, 0.13);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.soft-btn.secondary {
+  background: #f6f6f6;
+  color: #666;
+}
+
+.soft-btn.secondary:hover, .soft-btn.secondary:focus {
+  background: #ececec;
+}
+
+@media (max-width: 600px) {
+  .suggestion-card {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+    border-radius: 1.2rem;
+  }
+  .suggestion-title {
+    font-size: 1.1rem;
+  }
+  .suggestion-emoji {
+    font-size: 1.5rem;
+  }
+  .suggestion-gif {
+    max-width: 120px;
+  }
+  .soft-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+} 
